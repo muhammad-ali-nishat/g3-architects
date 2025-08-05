@@ -5,3 +5,179 @@
   font-weight: 400px;
   font-style: normal;
 }
+/* shared style */
+.displayflex{
+    display: flex;
+}
+.font-color-darklight1{
+    color:#424242;
+}
+.dark-3{
+    color: #727272;
+    font-size: 1rem;
+}
+
+
+.background-colour{
+    background-color: rgba(255, 144, 14, 0.1);
+    
+}
+.btn-primary{
+    background-color: #FF900E;
+    padding: 20px 25px;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 600px;
+    border: none;
+    
+}
+
+/* header style */
+.brand{
+    font-weight: 700px;
+    font-size: 3rem;
+    /* here 700px is bola and rem means that it will take x time more size in this defalut size (device)*/
+}
+.nav-links{
+    list-style: none;
+    gap: 20px;
+    text-decoration: none;   
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar, .banner{
+    max-width: 1440px;      /* this will set all of those in middle  important*/
+    margin: 0 auto;
+}
+/* banner style */
+.bannertittle{
+    font-weight: 700px;
+    font-size: 4rem;     /* here main font size is 64 so we have to do 4 rem beacuse 64/16=4 */
+}
+.banner-container{
+    max-width: 862px;
+    margin: 0 auto;      /* this will set all of those in middle  important*/
+    align-self: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.banner img{
+    max-height: 1440px;
+    margin: 0 auto;
+}
+.banner-img{
+    width: 100%;   /* this will do the responsive */
+}
+
+/* For main(team feture) */
+.main, .footer{
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+.team-headline{
+    font-size: 2.81rem;
+}
+.team{
+    align-items: center;
+    gap: 25px;
+}
+.teampic{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem;
+}
+.feature{
+    text-align: left;
+    margin-left: 140px;
+    max-width: 530px;
+
+}
+.main2{
+    display: flex;
+    gap: 100px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    }
+.hedline-left{
+    font-size: 1.2rem;
+}
+.pera-left{
+    color: #727272;
+    font-size: 1rem;
+}
+.card1{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    text-shadow: 100px;
+    padding: 30px;
+    margin-bottom:20px ;
+}
+.btn-img{
+    margin-left: -5rem;
+    margin-top: -4.84rem;
+}
+
+
+
+
+
+.full-card-foot{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 7.75rem;
+    margin-top: 6.25rem;
+}
+.foot1{
+    width: 45%;
+}
+.project{
+    color: #727272;
+    margin: 0px;
+}
+.num{
+    margin: 0px;
+}
+.card-foot{
+    text-align: center;
+    border: 2px rgba(255, 144, 14, 1) solid;
+    padding: 2.81rem;
+}
+
+
+/* for responsive */
+/* header */
+@media screen and (max-width: 576px){
+    .navbar, .nav-links, .team, .main2{
+        flex-direction: column;
+    }
+    /* for main */
+    .teampic{
+        
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .feature{
+        margin-left: 20px;
+    }
+    .right img{
+        width: 100%;
+    }
+    .btn-img{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+    .butmid{
+        display: flex;
+        justify-content: center;
+    }
+    .full-card-foot{
+    margin: 30px;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 6.25rem;
+
+}
+
+
