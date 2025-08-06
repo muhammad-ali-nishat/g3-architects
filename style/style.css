@@ -30,6 +30,7 @@
     font-size: 1.2rem;
     font-weight: 600px;
     border: none;
+    cursor: pointer;
     
 }
 
@@ -146,6 +147,30 @@
     padding: 2.81rem;
 }
 
+/* sponser */
+.sponser{
+    margin-top: 140px;
+}
+.sponser-head{
+    text-align: center;
+}
+.sponser-main-card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 50px;
+}
+
+.sponser-main-card img{
+    filter: grayscale(100%);
+}
+
+.last{
+    margin-top: 130px;
+    padding: 25px 100px 25px 100px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+}
+
 
 /* for responsive */
 /* header */
@@ -173,11 +198,14 @@
         display: flex;
         justify-content: center;
     }
-    .full-card-foot{
+    .full-card-foot, .sponser-main-card{
     margin: 30px;
     grid-template-columns: repeat(2,1fr);
     margin-top: 6.25rem;
 
 }
+.sponser-main-card{
+    row-gap: 50px;
+}
 
-
+}
